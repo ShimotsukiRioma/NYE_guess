@@ -44,7 +44,7 @@
 ### 🏮 提交报告 (Verification)
 
 如果你穿透了所有伪装，请在此处提交你的【观测报告】：
-[👉 提交 Issue ](在此替换为你的仓库Issue链接)
+[👉 提交 Issue ](https://github.com/ShimotsukiRioma/NYE_guess/issues)
 (你必须描述一些解开的过程)
 
 > 真相不在此处。它在你的考据里。
