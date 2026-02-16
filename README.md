@@ -22,13 +22,12 @@
 
 ### 🧩 核心协议 (Decryption Protocol)
 
-要开启核心，你需要通过以下算法自行构建解密环境：
-
-* **目标文件**: `core.bin`
-* **加密算法**: `AES-256-CBC`
-* **初始化向量 (IV)**: `0000000000000025`
-* **全密钥 (Full Key)**: `SHA256(Fragment_1 + Fragment_2)`
-* **提示**: 所有内容均需要恢复明文。
+* **算法**: `AES-256-CBC` / `PKCS7`
+* **IV (Hex)**: `3030303030303030303030303030303235`
+* **Key 构造逻辑**: 
+    1.  `Raw_Key = Fragment_1 + Decoded_Fragment_2`
+    2.  `Final_Key = SHA256(Raw_Key)`
+* **数据读入**: 请将 `core.bin` 以 Base64 格式输入。
 
 ---
 
